@@ -55,7 +55,7 @@ class _SignUpPageState extends State<SignUpPage> {
           ),
           Container(
             width: rightPanelWidth,
-            padding: const EdgeInsets.symmetric(horizontal: 100),
+            padding: const EdgeInsets.only(left: 80, right: 100),
             child: SingleChildScrollView(
               child: Form(
                 key: _formKey,
@@ -67,7 +67,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         IconButton(
                           icon: const Icon(
                             Icons.chevron_left,
-                            size: 60,
+                            size: 40,
                             color: Colors.grey,
                           ),
                           onPressed: () => Navigator.pop(context),
@@ -76,7 +76,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         const Text(
                           '회원가입',
                           style: TextStyle(
-                            fontSize: 70,
+                            fontSize: 55,
                             fontWeight: FontWeight.bold,
                             color: Color(0xFF867FED),
                           ),
@@ -103,7 +103,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       ),
                     ),
 
-                    const SizedBox(height: 15),
+                    const SizedBox(height: 5),
 
                     Padding(
                       padding: const EdgeInsets.only(left: 60),
@@ -129,7 +129,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       ),
                     ),
 
-                    const SizedBox(height: 15),
+                    const SizedBox(height: 5),
 
                     Padding(
                       padding: const EdgeInsets.only(left: 60),
@@ -161,7 +161,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       padding: const EdgeInsets.only(left: 60),
                       child: SizedBox(
                         width: double.infinity,
-                        height: 60,
+                        height: 50,
                         child: ElevatedButton(
                           onPressed: () async {
                             if (!_formKey.currentState!.validate()) return;
@@ -184,7 +184,7 @@ class _SignUpPageState extends State<SignUpPage> {
                                     .doc(user.uid)
                                     .set({
                                       'email': email,
-                                      'nickname': email, 
+                                      'nickname': email,
                                       'createdAt': FieldValue.serverTimestamp(),
                                     });
                               }

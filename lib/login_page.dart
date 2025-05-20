@@ -82,13 +82,13 @@ class _LoginPageState extends State<LoginPage> {
               borderRadius: BorderRadius.only(topRight: Radius.circular(180)),
             ),
             child: Transform.scale(
-              scale: 1.3,
+              scale: 1.1,
               child: Image.asset('assets/images/iseeyoulogo.png'),
             ),
           ),
           Container(
             width: screenWidth / 15 * 8,
-            padding: const EdgeInsets.all(120),
+            padding: const EdgeInsets.all(100),
             child: LayoutBuilder(
               builder: (context, constraints) {
                 return ConstrainedBox(
@@ -107,14 +107,14 @@ class _LoginPageState extends State<LoginPage> {
                           Text(
                             'Log in',
                             style: TextStyle(
-                              fontSize: 80,
+                              fontSize: 70,
                               fontWeight: FontWeight.w800,
                               color: Color(0xFF867FED),
                             ),
                           ),
-                          const SizedBox(height: 70),
+                          const SizedBox(height: 20),
                           SizedBox(
-                            height: 60,
+                            height: 50,
                             child: TextFormField(
                               controller: _emailController,
                               style: TextStyle(fontSize: 18),
@@ -156,9 +156,9 @@ class _LoginPageState extends State<LoginPage> {
                               },
                             ),
                           ),
-                          const SizedBox(height: 20),
+                          const SizedBox(height: 10),
                           SizedBox(
-                            height: 60,
+                            height: 50,
                             child: TextFormField(
                               controller: _passwordController,
                               style: TextStyle(fontSize: 18),
@@ -216,7 +216,7 @@ class _LoginPageState extends State<LoginPage> {
                               },
                             ),
                           ),
-                          const SizedBox(height: 30),
+                          const SizedBox(height: 5),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -265,7 +265,7 @@ class _LoginPageState extends State<LoginPage> {
                               ),
                             ],
                           ),
-                          const SizedBox(height: 20),
+                          const SizedBox(height: 5),
                           SizedBox(
                             height: 50,
                             child: ElevatedButton(
@@ -285,18 +285,18 @@ class _LoginPageState extends State<LoginPage> {
                                 '로그인',
                                 style: TextStyle(
                                   color: Colors.white,
-                                  fontSize: 23,
+                                  fontSize: 20,
                                 ),
                               ),
                             ),
                           ),
-                          const SizedBox(height: 60),
+                          const SizedBox(height: 20),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               SizedBox(
                                 height: 20,
-                                width: 200,
+                                width: 120,
                                 child: Divider(
                                   color: Colors.grey.shade300,
                                   thickness: 2,
@@ -313,7 +313,7 @@ class _LoginPageState extends State<LoginPage> {
                               Spacer(),
                               SizedBox(
                                 height: 20,
-                                width: 200,
+                                width: 120,
                                 child: Divider(
                                   color: Colors.grey.shade300,
                                   thickness: 2,
@@ -321,7 +321,7 @@ class _LoginPageState extends State<LoginPage> {
                               ),
                             ],
                           ),
-                          const SizedBox(height: 60),
+                          const SizedBox(height: 20),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -331,8 +331,8 @@ class _LoginPageState extends State<LoginPage> {
                                 'googleIcon.png',
                               ])
                                 SizedBox(
-                                  height: 60,
-                                  width: 150,
+                                  height: 40,
+                                  width: 100,
                                   child: ElevatedButton(
                                     onPressed: () {},
                                     style: ElevatedButton.styleFrom(
@@ -356,7 +356,7 @@ class _LoginPageState extends State<LoginPage> {
                                 ),
                             ],
                           ),
-                          const SizedBox(height: 60),
+                          const SizedBox(height: 20),
                           TextButton(
                             onPressed: () {
                               Navigator.push(
@@ -379,7 +379,7 @@ class _LoginPageState extends State<LoginPage> {
                             child: Text(
                               '회원가입',
                               style: TextStyle(
-                                fontSize: 20,
+                                fontSize: 15,
                                 color: Color(0xFF867FED),
                               ),
                             ),
